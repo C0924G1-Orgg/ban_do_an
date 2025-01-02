@@ -1,6 +1,5 @@
 package com.example.case_study_module_3.controller.controller;
 
-
 import com.example.case_study_module_3.controller.model.CartItem;
 import com.example.case_study_module_3.controller.service.ICartService;
 import com.example.case_study_module_3.controller.service.impl.CartServiceImpl;
@@ -23,7 +22,7 @@ public class CartController extends HttpServlet {
         if ("view".equals(action)) {
             req.setAttribute("cartItems", cartService.getCartItems());
             req.setAttribute("total", cartService.calculateTotal());
-            req.getRequestDispatcher("/views/cart.jsp").forward(req, resp);
+            req.getRequestDispatcher("/user/cart.jsp").forward(req, resp);
         }
     }
 
@@ -33,11 +32,14 @@ public class CartController extends HttpServlet {
 
         switch (action) {
             case "add":
+                // Lấy thông tin món ăn từ form
                 int id = Integer.parseInt(req.getParameter("id"));
                 String name = req.getParameter("name");
                 String image = req.getParameter("image");
                 double price = Double.parseDouble(req.getParameter("price"));
                 int quantity = Integer.parseInt(req.getParameter("quantity"));
+
+                // Thêm vào giỏ hàng
                 cartService.addToCart(new CartItem(id, name, image, price, quantity));
                 break;
 

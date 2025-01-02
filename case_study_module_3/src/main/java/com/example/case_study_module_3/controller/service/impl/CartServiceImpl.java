@@ -6,34 +6,39 @@ import com.example.case_study_module_3.controller.service.ICartService;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class CartServiceImpl implements ICartService {
-    private final List<CartItem> cartItems = new ArrayList<>();
+    private List<CartItem> cartItems = new ArrayList<>();
 
     @Override
-    public void addToCart(CartItem item) {
-        for (CartItem cartItem : cartItems) {
-            if (cartItem.getId() == item.getId()) {
-                cartItem.setQuantity(cartItem.getQuantity() + item.getQuantity());
-                return;
+    public void addToCart(CartItem cartItem) {
+        boolean exists = false;
+
+        for (CartItem item : cartItems) {
+            if (item.getId() == cartItem.getId()) {
+                item.setQuantity(item.getQuantity() + cartItem.getQuantity());
+                exists = true;
+                break;
             }
         }
-        cartItems.add(item);
-    }
 
-    @Override
-    public void updateQuantity(int itemId, int quantity) {
-        for (CartItem cartItem : cartItems) {
-            if (cartItem.getId() == itemId) {
-                cartItem.setQuantity(quantity);
-                return;
-            }
+        if (!exists) {
+            cartItems.add(cartItem);
         }
     }
 
     @Override
-    public void removeFromCart(int itemId) {
-        cartItems.removeIf(cartItem -> cartItem.getId() == itemId);
+    public void updateQuantity(int id, int quantity) {
+        for (CartItem item : cartItems) {
+            if (item.getId() == id) {
+                item.setQuantity(quantity);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public void removeFromCart(int id) {
+        cartItems.removeIf(item -> item.getId() == id);
     }
 
     @Override
@@ -43,6 +48,10 @@ public class CartServiceImpl implements ICartService {
 
     @Override
     public double calculateTotal() {
-        return cartItems.stream().mapToDouble(CartItem::getTotalPrice).sum();
+        double total = 0;
+        for (CartItem item : cartItems) {
+            total += item.getTotalPrice();
+        }
+        return total;
     }
 }

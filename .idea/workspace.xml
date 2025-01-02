@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e114f64-07f8-42a7-87b0-f8ac45e52727" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/RestaurantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/RestaurantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/food_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/food_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/promotion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/promotion.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735780026052</updated>
       <workItem from="1735780028498" duration="297000" />
-      <workItem from="1735793382979" duration="6059000" />
+      <workItem from="1735793382979" duration="11350000" />
     </task>
     <servers />
   </component>

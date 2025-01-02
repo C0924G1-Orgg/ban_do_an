@@ -203,7 +203,10 @@
 </div>
 
 <div class="cart-icon">
-    <i class="bi bi-cart"></i>
+    <a href="${pageContext.request.contextPath}/cart?action=view">
+        <i class="bi bi-cart"></i>
+        <span class="badge bg-danger">${cartSize}</span>
+    </a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

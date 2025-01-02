@@ -37,10 +37,10 @@ public class RestaurantRepository {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
                     "INSERT INTO restaurants (restaurant_name, restaurant_address, restaurant_phone, restaurant_email) VALUES (?, ?, ?, ?)"
             );
-            statement.setString(1, restaurant.getRestaurant_name());
-            statement.setString(2, restaurant.getRestaurant_address());
-            statement.setString(3, restaurant.getRestaurant_phone());
-            statement.setString(4, restaurant.getRestaurant_email());
+            statement.setString(1, restaurant.getRestaurantName());
+            statement.setString(2, restaurant.getRestaurantAddress());
+            statement.setString(3, restaurant.getRestaurantPhone());
+            statement.setString(4, restaurant.getRestaurantEmail());
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -74,7 +74,7 @@ public class RestaurantRepository {
             PreparedStatement checkStatement = BaseRepository.getConnection().prepareStatement(
                     "SELECT * FROM restaurants WHERE restaurant_id = ?"
             );
-            checkStatement.setInt(1, restaurant.getRestaurant_id());
+            checkStatement.setInt(1, restaurant.getRestaurantId());
             ResultSet resultSet = checkStatement.executeQuery();
             if (!resultSet.next()) {
                 return false;
@@ -83,11 +83,11 @@ public class RestaurantRepository {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
                     "UPDATE restaurants SET restaurant_name = ?, restaurant_address = ?, restaurant_phone = ?, restaurant_email = ? WHERE restaurant_id = ?"
             );
-            statement.setString(1, restaurant.getRestaurant_name());
-            statement.setString(2, restaurant.getRestaurant_address());
-            statement.setString(3, restaurant.getRestaurant_phone());
-            statement.setString(4, restaurant.getRestaurant_email());
-            statement.setInt(5, restaurant.getRestaurant_id());
+            statement.setString(1, restaurant.getRestaurantName());
+            statement.setString(2, restaurant.getRestaurantAddress());
+            statement.setString(3, restaurant.getRestaurantPhone());
+            statement.setString(4, restaurant.getRestaurantEmail());
+            statement.setInt(5, restaurant.getRestaurantId());
             statement.executeUpdate();
             return true;
         } catch (SQLException e) {

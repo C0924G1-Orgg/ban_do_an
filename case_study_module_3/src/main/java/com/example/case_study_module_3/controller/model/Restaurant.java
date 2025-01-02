@@ -3,61 +3,61 @@ package com.example.case_study_module_3.controller.model;
 import java.util.Objects;
 
 public class Restaurant {
-    private int restaurant_id;
-    private String restaurant_name;
-    private String restaurant_address;
-    private String restaurant_phone;
-    private String restaurant_email;
+    private int restaurantId;
+    private String restaurantName;
+    private String restaurantAddress;
+    private String restaurantPhone;
+    private String restaurantEmail;
 
     public Restaurant() {
     }
 
-    public Restaurant(int restaurant_id, String restaurant_name, String restaurant_address, String restaurant_phone, String restaurant_email) {
-        this.restaurant_id = restaurant_id;
-        this.restaurant_name = restaurant_name;
-        this.restaurant_address = restaurant_address;
-        this.restaurant_phone = restaurant_phone;
-        this.restaurant_email = restaurant_email;
+    public Restaurant(int restaurantId, String restaurantName, String restaurantAddress, String restaurantPhone, String restaurantEmail) {
+        this.restaurantId = restaurantId;
+        this.restaurantName = restaurantName;
+        this.restaurantAddress = restaurantAddress;
+        this.restaurantPhone = restaurantPhone;
+        this.restaurantEmail = restaurantEmail;
     }
 
-    public int getRestaurant_id() {
-        return restaurant_id;
+    public int getRestaurantId() {
+        return restaurantId;
     }
 
-    public void setRestaurant_id(int restaurant_id) {
-        this.restaurant_id = restaurant_id;
+    public void setRestaurantId(int restaurantId) {
+        this.restaurantId = restaurantId;
     }
 
-    public String getRestaurant_name() {
-        return restaurant_name;
+    public String getRestaurantName() {
+        return restaurantName;
     }
 
-    public void setRestaurant_name(String restaurant_name) {
-        this.restaurant_name = restaurant_name;
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
     }
 
-    public String getRestaurant_address() {
-        return restaurant_address;
+    public String getRestaurantAddress() {
+        return restaurantAddress;
     }
 
-    public void setRestaurant_address(String restaurant_address) {
-        this.restaurant_address = restaurant_address;
+    public void setRestaurantAddress(String restaurantAddress) {
+        this.restaurantAddress = restaurantAddress;
     }
 
-    public String getRestaurant_phone() {
-        return restaurant_phone;
+    public String getRestaurantPhone() {
+        return restaurantPhone;
     }
 
-    public void setRestaurant_phone(String restaurant_phone) {
-        this.restaurant_phone = restaurant_phone;
+    public void setRestaurantPhone(String restaurantPhone) {
+        this.restaurantPhone = restaurantPhone;
     }
 
-    public String getRestaurant_email() {
-        return restaurant_email;
+    public String getRestaurantEmail() {
+        return restaurantEmail;
     }
 
-    public void setRestaurant_email(String restaurant_email) {
-        this.restaurant_email = restaurant_email;
+    public void setRestaurantEmail(String restaurantEmail) {
+        this.restaurantEmail = restaurantEmail;
     }
 
     @Override
@@ -65,22 +65,22 @@ public class Restaurant {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Restaurant that = (Restaurant) o;
-        return restaurant_id == that.restaurant_id && Objects.equals(restaurant_email, that.restaurant_email);
+        return restaurantId == that.restaurantId && Objects.equals(restaurantEmail, that.restaurantEmail);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(restaurant_id, restaurant_email);
+        return Objects.hash(restaurantId, restaurantEmail);
     }
 
     @Override
     public String toString() {
         return "Restaurant{" +
-                "restaurant_id=" + restaurant_id +
-                ", restaurant_name='" + restaurant_name + '\'' +
-                ", restaurant_address='" + restaurant_address + '\'' +
-                ", restaurant_phone='" + restaurant_phone + '\'' +
-                ", restaurant_email='" + restaurant_email + '\'' +
+                "restaurant_id=" + restaurantId +
+                ", restaurant_name='" + restaurantName + '\'' +
+                ", restaurant_address='" + restaurantAddress + '\'' +
+                ", restaurant_phone='" + restaurantPhone + '\'' +
+                ", restaurant_email='" + restaurantEmail + '\'' +
                 '}';
     }
 }

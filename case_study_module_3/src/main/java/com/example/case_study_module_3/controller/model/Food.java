@@ -8,16 +8,33 @@ public class Food {
     private String food_name;
     private String food_description;
     private double food_price;
+    private String food_image;
+
+    public Food(int food_id, int restaurant_id, String food_name, String food_description, double food_price, String food_image) {
+        this.food_id = food_id;
+        this.restaurant_id = restaurant_id;
+        this.food_name = food_name;
+        this.food_description = food_description;
+        this.food_price = food_price;
+        this.food_image = food_image;
+    }
 
     public Food() {
     }
-
     public Food(int food_id, int restaurant_id, String food_name, String food_description, double food_price) {
         this.food_id = food_id;
         this.restaurant_id = restaurant_id;
         this.food_name = food_name;
         this.food_description = food_description;
         this.food_price = food_price;
+    }
+
+    public String getImage() {
+        return food_image;
+    }
+
+    public void setImage(String image) {
+        this.food_image = image;
     }
 
     public int getFood_id() {

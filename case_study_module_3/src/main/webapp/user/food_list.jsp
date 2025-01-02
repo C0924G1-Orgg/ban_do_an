@@ -44,6 +44,7 @@
                     <c:forEach var="food" items="${foods}">
                         <div class="col-md-4 mb-4">
                             <div class="card">
+                                <img src="${food.image}" class="card-img-top" alt="${food.foodName}">
                                 <div class="card-body">
                                     <h5 class="card-title">${food.foodName}</h5>
                                     <p class="card-text">${food.foodDescription}</p>

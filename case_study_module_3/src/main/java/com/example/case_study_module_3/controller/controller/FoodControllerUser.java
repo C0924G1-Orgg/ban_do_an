@@ -12,9 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "FoodControllerUser", urlPatterns = "/thuc-don")
-class FoodControllerUser extends HttpServlet {
+@WebServlet(name = "foodControllerUser", urlPatterns = "/thuc-don")
+public class FoodControllerUser extends HttpServlet {
     private final IFoodService foodService = new FoodService();
+
+    // Constructor mặc định
+    public FoodControllerUser() {
+        super();
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,12 +28,5 @@ class FoodControllerUser extends HttpServlet {
         request.getRequestDispatcher("/user/food_list.jsp").forward(request, response);
         System.out.println("Danh sách thực đơn:");
         foods.forEach(System.out::println);
-
     }
 }
-
-
-
-
-
-

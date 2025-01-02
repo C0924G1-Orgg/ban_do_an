@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "foodController", urlPatterns = "/food")
-public class FoodController extends HttpServlet {
+public class FoodControllerAdmin extends HttpServlet {
     private static final String ACTION = "action";
     private static final String MESSAGE = "message";
 
@@ -117,6 +117,12 @@ public class FoodController extends HttpServlet {
         String priceStr = req.getParameter("price");
         String restaurantIdStr = req.getParameter("restaurantId");
 
+        if (name == null || name.isEmpty() || description == null || description.isEmpty()) {
+            req.setAttribute("error", "Name and description must not be empty.");
+            req.setAttribute("restaurants", restaurantService.getAll());
+            req.getRequestDispatcher("/admin/create.jsp").forward(req, resp);
+            return;
+        }
         try {
             double price = Double.parseDouble(priceStr);
             int restaurantId = Integer.parseInt(restaurantIdStr);
@@ -136,7 +142,7 @@ public class FoodController extends HttpServlet {
             redirectWithMessage(resp, CREATE_SUCCESS);
 
         } catch (NumberFormatException e) {
-            req.setAttribute("error", "Invalid format for price. Please enter a valid number (e.g., 12.34).");
+            req.setAttribute("error", "Invalid format for price or restaurant ID. Please enter valid numbers.");
             req.setAttribute("name", name);
             req.setAttribute("description", description);
             req.setAttribute("price", priceStr);
@@ -144,6 +150,7 @@ public class FoodController extends HttpServlet {
             req.getRequestDispatcher("/admin/create.jsp").forward(req, resp);
         }
     }
+
 
     private void handleUpdate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String idStr = req.getParameter("id");

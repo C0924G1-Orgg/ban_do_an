@@ -14,6 +14,7 @@ public class FoodRepository {
     public List<Food> getAll() {
         List<Food> foods = new ArrayList<>();
         try {
+            // Cập nhật câu truy vấn để lấy thêm cột "image"
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
                     "SELECT * FROM foods"
             );
@@ -24,13 +25,16 @@ public class FoodRepository {
                 String food_name = resultSet.getString("food_name");
                 String food_description = resultSet.getString("food_description");
                 double food_price = resultSet.getDouble("food_price");
-                foods.add(new Food(food_id, restaurant_id, food_name, food_description, food_price));
+                String food_image = resultSet.getString("food_image"); // Thêm dòng này để lấy cột image
+
+                foods.add(new Food(food_id, restaurant_id, food_name, food_description, food_price, food_image));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return foods;
     }
+
 
     public List<FoodDTO> getAllDTO() {
         List<FoodDTO> foodDTOs = new ArrayList<>();

@@ -7,6 +7,7 @@
         <welcome-file>trang-chu</welcome-file>
     </welcome-file-list>
 
+    <!--khuyến mãi-->
     <servlet>
         <servlet-name>PromotionServlet</servlet-name>
         <jsp-file>/view/promotion.jsp</jsp-file>
@@ -16,6 +17,7 @@
         <url-pattern>/khuyen-mai</url-pattern>
     </servlet-mapping>
 
+    <!--liên hệ-->
     <servlet>
         <servlet-name>ContactServlet</servlet-name>
         <jsp-file>/view/contact.jsp</jsp-file>
@@ -25,6 +27,7 @@
         <url-pattern>/lien-he</url-pattern>
     </servlet-mapping>
 
+    <!--giới thiệu-->
     <servlet>
         <servlet-name>AboutServlet</servlet-name>
         <jsp-file>/view/about.jsp</jsp-file>
@@ -33,12 +36,7 @@
         <servlet-name>AboutServlet</servlet-name>
         <url-pattern>/gioi-thieu</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>ProductServlet</servlet-name>
-        <jsp-file>/admin/product_list.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ProductServlet</servlet-name>
-        <url-pattern>/thuc-don</url-pattern>
-    </servlet-mapping>
+
+    <!--thực đơn-->
+
 </web-app>

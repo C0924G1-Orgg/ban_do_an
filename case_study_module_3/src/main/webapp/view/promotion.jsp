@@ -141,7 +141,7 @@
             <a class="nav-link" href="/thuc-don">THỰC ĐƠN</a>
             <a class="nav-link" href="/khuyen-mai">KHUYẾN MÃI</a>
             <a class="nav-link" href="/lien-he">LIÊN HỆ</a>
-            <a class="nav-link" href="/khuyen-mai">GIỚI THIỆU</a>
+            <a class="nav-link" href="/gioi-thieu">GIỚI THIỆU</a>
         </nav>
     </div>
     <div class="contact-info">

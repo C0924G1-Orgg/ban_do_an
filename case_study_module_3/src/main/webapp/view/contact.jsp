@@ -5,8 +5,12 @@
   <jsp:include page="/partials/head.jsp" />
   <title>Liên hệ - FOOD</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+  <link href="/css/contact.css" rel="stylesheet">
+ <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
+
 <!-- Sidebar -->
 <div class="collapse d-md-block sidebar" id="sidebar">
   <div>
@@ -35,7 +39,7 @@
 <!-- Main Content -->
 <div class="main-content">
   <div class="banner">
-    <h1 style="text-align: left">LIÊN HỆ VỚI FOOD</h1>
+    <h1>LIÊN HỆ VỚI FOOD</h1>
   </div>
 
   <div class="contact-content">
@@ -46,6 +50,7 @@
       <li><i class="fas fa-phone"></i> Điện thoại: 0123 456 789</li>
       <li><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</li>
     </ul>
+
     <!-- Contact Form -->
     <div class="contact-form">
       <h3><i class="fas fa-pencil-alt"></i> Gửi tin nhắn cho chúng tôi</h3>
@@ -62,24 +67,20 @@
           <label for="message">Lời nhắn:</label>
           <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Gửi</button>
+        <button type="submit" class="btn">Gửi</button>
       </form>
-    </div>
-    <!-- Google Map -->
-    <div class="google-map">
-      <h3><i class="fas fa-map-marked-alt"></i> Tìm chúng tôi trên bản đồ</h3>
-      <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=123+Đường+ABC,+Quận+1,+TP.HCM"
-              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
 
   <jsp:include page="/partials/footer.jsp" />
 </div>
 
+<!-- Cart Icon -->
 <div class="cart-icon">
   <i class="bi bi-cart"></i>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,99 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    margin-left: 260px; /* Đảm bảo không đè lên sidebar */
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 600px;  /* Giới hạn chiều rộng của form */
+    margin-left: auto;  /* Căn giữa */
+    margin-right: auto; /* Căn giữa */
+}
+
+.contact-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-content ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-content ul li i {
+    margin-right: 10px;
+    color: #912b42;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 400px;  /* Giới hạn chiều rộng input */
+    padding: 8px;  /* Giảm padding */
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control:focus {
+    border-color: #912b42;
+    outline: none;
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #912b42;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.cart-icon:hover {
+    background-color: #7c2235;
+}
+.btn{
+    background: lightgray;
+}

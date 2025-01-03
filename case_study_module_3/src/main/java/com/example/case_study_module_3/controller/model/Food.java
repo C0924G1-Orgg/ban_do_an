@@ -3,61 +3,61 @@ package com.example.case_study_module_3.controller.model;
 import java.util.Objects;
 
 public class Food {
-    private int food_id;
-    private int restaurant_id;
-    private String food_name;
-    private String food_description;
-    private double food_price;
+    private int foodId;
+    private int restaurantId;
+    private String foodName;
+    private String foodDescription;
+    private double foodPrice;
 
     public Food() {
     }
 
-    public Food(int food_id, int restaurant_id, String food_name, String food_description, double food_price) {
-        this.food_id = food_id;
-        this.restaurant_id = restaurant_id;
-        this.food_name = food_name;
-        this.food_description = food_description;
-        this.food_price = food_price;
+    public Food(int foodId, int restaurantId, String foodName, String foodDescription, double foodPrice) {
+        this.foodId = foodId;
+        this.restaurantId = restaurantId;
+        this.foodName = foodName;
+        this.foodDescription = foodDescription;
+        this.foodPrice = foodPrice;
     }
 
-    public int getFood_id() {
-        return food_id;
+    public int getFoodId() {
+        return foodId;
     }
 
-    public void setFood_id(int food_id) {
-        this.food_id = food_id;
+    public void setFoodId(int foodId) {
+        this.foodId = foodId;
     }
 
-    public int getRestaurant_id() {
-        return restaurant_id;
+    public int getRestaurantId() {
+        return restaurantId;
     }
 
-    public void setRestaurant_id(int restaurant_id) {
-        this.restaurant_id = restaurant_id;
+    public void setRestaurantId(int restaurantId) {
+        this.restaurantId = restaurantId;
     }
 
     public String getFoodName() {
-        return food_name;
+        return foodName;
     }
 
-    public void setFood_name(String food_name) {
-        this.food_name = food_name;
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
     }
 
     public String getFoodDescription() {
-        return food_description;
+        return foodDescription;
     }
 
-    public void setFood_description(String food_description) {
-        this.food_description = food_description;
+    public void setFoodDescription(String foodDescription) {
+        this.foodDescription = foodDescription;
     }
 
     public double getFoodPrice() {
-        return food_price;
+        return foodPrice;
     }
 
-    public void setFood_price(double food_price) {
-        this.food_price = food_price;
+    public void setFoodPrice(double foodPrice) {
+        this.foodPrice = foodPrice;
     }
 
     @Override
@@ -65,21 +65,21 @@ public class Food {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Food menu = (Food) o;
-        return food_id == menu.food_id && Objects.equals(food_name, menu.food_name);
+        return foodId == menu.foodId && Objects.equals(foodName, menu.foodName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(food_id, food_name);
+        return Objects.hash(foodId, foodName);
     }
 
     @Override
     public String toString() {
         return "menu{" +
-                "food_id" + food_id +
-                "restaurant_id" + restaurant_id +
-                "food_name" + food_name +
-                "food_description" + food_description +
-                "food_price" + food_price + "}";
+                "food_id" + foodId +
+                "restaurant_id" + restaurantId +
+                "food_name" + foodName +
+                "food_description" + foodDescription +
+                "food_price" + foodPrice + "}";
     }
 }

@@ -3,71 +3,71 @@ package com.example.case_study_module_3.controller.model;
 import java.util.Objects;
 
 public class Customer {
-    private int customer_id;
-    private String customer_name;
-    private String customer_email;
-    private String customer_password;
-    private String customer_phone;
-    private String customer_address;
+    private int customerId;
+    private String customerName;
+    private String customerEmail;
+    private String customerPassword;
+    private String customerPhone;
+    private String customerAddress;
 
     public Customer() {
     }
 
-    public Customer(int customer_id, String customer_name, String customer_email, String customer_password, String customer_phone, String customer_address) {
-        this.customer_id = customer_id;
-        this.customer_name = customer_name;
-        this.customer_email = customer_email;
-        this.customer_password = customer_password;
-        this.customer_phone = customer_phone;
-        this.customer_address = customer_address;
+    public Customer(int customerId, String customerName, String customerEmail, String customerPassword, String customerPhone, String customerAddress) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPassword = customerPassword;
+        this.customerPhone = customerPhone;
+        this.customerAddress = customerAddress;
     }
 
-    public int getCustomer_id() {
-        return customer_id;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_id(int customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
-    public String getCustomer_name() {
-        return customer_name;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setCustomer_name(String customer_name) {
-        this.customer_name = customer_name;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
-    public String getCustomer_email() {
-        return customer_email;
+    public String getCustomerEmail() {
+        return customerEmail;
     }
 
-    public void setCustomer_email(String customer_email) {
-        this.customer_email = customer_email;
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
     }
 
-    public String getCustomer_password() {
-        return customer_password;
+    public String getCustomerPassword() {
+        return customerPassword;
     }
 
-    public void setCustomer_password(String customer_password) {
-        this.customer_password = customer_password;
+    public void setCustomerPassword(String customerPassword) {
+        this.customerPassword = customerPassword;
     }
 
-    public String getCustomer_phone() {
-        return customer_phone;
+    public String getCustomerPhone() {
+        return customerPhone;
     }
 
-    public void setCustomer_phone(String customer_phone) {
-        this.customer_phone = customer_phone;
+    public void setCustomerPhone(String customerPhone) {
+        this.customerPhone = customerPhone;
     }
 
-    public String getCustomer_address() {
-        return customer_address;
+    public String getCustomerAddress() {
+        return customerAddress;
     }
 
-    public void setCustomer_address(String customer_address) {
-        this.customer_address = customer_address;
+    public void setCustomerAddress(String customerAddress) {
+        this.customerAddress = customerAddress;
     }
 
     @Override
@@ -75,22 +75,22 @@ public class Customer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return customer_id == customer.customer_id && Objects.equals(customer_email, customer.customer_email);
+        return customerId == customer.customerId && Objects.equals(customerEmail, customer.customerEmail);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(customer_id, customer_email);
+        return Objects.hash(customerId, customerEmail);
     }
 
     @Override
     public String toString() {
         return "Customer{" +
-                "customer_id=" + customer_id +
-                ", customer_name='" + customer_name + '\'' +
-                ", customer_email='" + customer_email + '\'' +
-                ", customer_phone='" + customer_phone + '\'' +
-                ", customer_address='" + customer_address + '\'' +
+                "customer_id=" + customerId +
+                ", customer_name='" + customerName + '\'' +
+                ", customer_email='" + customerEmail + '\'' +
+                ", customer_phone='" + customerPhone + '\'' +
+                ", customer_address='" + customerAddress + '\'' +
                 '}';
     }
 }

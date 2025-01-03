@@ -23,25 +23,25 @@
 
     <form action="/food" method="post">
         <input type="hidden" name="action" value="update">
-        <input type="hidden" name="id" value="${food.food_id}">
+        <input type="hidden" name="id" value="${food.foodId}">
         <div class="mb-3">
             <label for="name" class="form-label">Tên món ăn:</label>
-            <input type="text" id="name" name="name" class="form-control" value="${food.food_name}" required>
+            <input type="text" id="name" name="name" class="form-control" value="${food.foodName}" required>
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Mô tả:</label>
-            <textarea id="description" name="description" class="form-control" required>${food.food_description}</textarea>
+            <textarea id="description" name="description" class="form-control" required>${food.foodDescription}</textarea>
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Giá:</label>
-            <input type="number" id="price" name="price" class="form-control" step="0.01" value="${food.food_price}" required>
+            <input type="number" id="price" name="price" class="form-control" step="0.01" value="${food.foodPrice}" required>
         </div>
         <div class="mb-3">
             <label for="restaurantId" class="form-label">Nhà hàng:</label>
             <select id="restaurantId" name="restaurantId" class="form-select" required>
                 <c:forEach var="restaurant" items="${restaurants}">
-                    <option value="${restaurant.restaurant_id}" ${restaurant.restaurant_id == food.restaurant_id ? 'selected' : ''}>
-                            ${restaurant.restaurant_name}
+                    <option value="${restaurant.restaurantId}" ${restaurant.restaurantId == food.restaurantId ? 'selected' : ''}>
+                            ${restaurant.restaurantName}
                     </option>
                 </c:forEach>
             </select>

@@ -62,7 +62,7 @@ public class FoodRepository {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
                     "INSERT INTO foods (restaurant_id, food_name, food_description, food_price) VALUES (?, ?, ?, ?)"
             );
-            statement.setInt(1, food.getRestaurant_id());
+            statement.setInt(1, food.getRestaurantId());
             statement.setString(2, food.getFoodName());
             statement.setString(3, food.getFoodDescription());
             statement.setDouble(4, food.getFoodPrice());
@@ -99,7 +99,7 @@ public class FoodRepository {
             PreparedStatement checkStatement = BaseRepository.getConnection().prepareStatement(
                     "SELECT * FROM foods WHERE food_id = ?"
             );
-            checkStatement.setInt(1, food.getFood_id());
+            checkStatement.setInt(1, food.getFoodId());
             ResultSet resultSet = checkStatement.executeQuery();
             if (!resultSet.next()) {
                 return false;
@@ -108,11 +108,11 @@ public class FoodRepository {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
                     "UPDATE foods SET restaurant_id = ?, food_name = ?, food_description = ?, food_price = ? WHERE food_id = ?"
             );
-            statement.setInt(1, food.getRestaurant_id());
+            statement.setInt(1, food.getRestaurantId());
             statement.setString(2, food.getFoodName());
             statement.setString(3, food.getFoodDescription());
             statement.setDouble(4, food.getFoodPrice());
-            statement.setInt(5, food.getFood_id());
+            statement.setInt(5, food.getFoodId());
             statement.executeUpdate();
             return true;
         } catch (SQLException e) {

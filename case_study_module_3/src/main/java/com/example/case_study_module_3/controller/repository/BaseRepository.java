@@ -11,7 +11,7 @@ public class BaseRepository {
 
     private static String jdbcURL = "jdbc:mysql://localhost:3306/order_food?useSSL=false";
     private static String jdbcuser = "root";
-    private static String jdbcpassword = "Kietanh2301@";
+    private static String jdbcpassword = "Nn15071992$";
     private static Connection connection = null;
 
     static {

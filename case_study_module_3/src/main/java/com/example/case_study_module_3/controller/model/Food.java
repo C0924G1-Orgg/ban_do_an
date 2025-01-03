@@ -9,6 +9,8 @@ public class Food {
     private String foodDescription;
     private double foodPrice;
     private String foodImage;
+    private String restaurantName; // Tên nhà hàng
+
 
     public Food(int foodId, int restaurantId, String foodName, String foodDescription, double foodPrice, String foodImage) {
         this.foodId = foodId;
@@ -27,6 +29,32 @@ public class Food {
         this.foodName = foodName;
         this.foodDescription = foodDescription;
         this.foodPrice = foodPrice;
+    }
+
+    public Food(int foodId, int restaurantId, String foodName, String foodDescription, double foodPrice, String foodImage, String restaurantName) {
+        this.foodId = foodId;
+        this.restaurantId = restaurantId;
+        this.foodName = foodName;
+        this.foodDescription = foodDescription;
+        this.foodPrice = foodPrice;
+        this.foodImage = foodImage;
+        this.restaurantName = restaurantName;
+    }
+
+    public String getFoodImage() {
+        return foodImage;
+    }
+
+    public void setFoodImage(String foodImage) {
+        this.foodImage = foodImage;
+    }
+
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
     }
 
     public String getImage() {

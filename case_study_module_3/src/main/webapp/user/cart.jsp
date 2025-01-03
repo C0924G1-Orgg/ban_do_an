@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Giỏ Hàng - Food</title>
-    <jsp:include page="/partials/head.jsp"></jsp:include>
     <link rel="stylesheet" type="text/css" href="/css/cart.css">
-
+    <jsp:include page="/partials/head.jsp"></jsp:include>
+x
 </head>
 <body>
 <div class="collapse d-md-block sidebar" id="sidebar">
@@ -80,7 +80,7 @@
                 </tbody>
             </table>
 
-            <h3 style="text-align: right;">Tổng cộng: <span id="total-price"><fmt:formatNumber value="${total}" type="currency" currencySymbol="VND"/></span></h3>
+            <h3 style="text-align: center;">Tổng cộng: <span id="total-price"><fmt:formatNumber value="${total}" type="currency" currencySymbol="VND"/></span></h3>
         </c:when>
         <c:otherwise>
             <p>Giỏ hàng của bạn hiện tại không có sản phẩm nào.</p>

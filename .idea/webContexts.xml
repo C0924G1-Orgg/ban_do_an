@@ -3,7 +3,9 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
+        <entry key="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials/food_menu.jsp" value="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials" />
         <entry key="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/cart.jsp" value="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/user" />
+        <entry key="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/food_list.jsp" value="file://$PROJECT_DIR$/case_study_module_3/src/main/webapp/user" />
       </map>
     </option>
   </component>

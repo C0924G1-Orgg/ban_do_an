@@ -4,6 +4,13 @@ body {
     padding: 0;
     display: flex;
 }
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
 
 /* Sidebar */
 .sidebar {
@@ -337,6 +344,42 @@ footer {
 .cart-icon:hover {
     background-color: #a62c06;
 }
+.d-flex {
+    display: flex;
+    justify-content: space-between; /* Khoảng cách đều giữa các nút */
+    align-items: center; /* Căn giữa theo trục dọc */
+}
+
+form.me-1, a.ms-1 {
+    flex: 1; /* Để nút chiếm đều không gian */
+}
+
+form.me-1 button, a.ms-1 {
+    width: 100%; /* Nút giãn theo không gian */
+}
+.icon-button {
+    display: inline-flex; /* Đặt nội dung nút ở giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 40%; /* Chiều rộng cố định */
+    height: 40px; /* Chiều cao cố định */
+    border-radius: 30px; /* Bo tròn nhẹ */
+    background-color: grey; /* Màu nền */
+    color: #fff; /* Màu biểu tượng */
+    border: none; /* Loại bỏ viền */
+    font-size: 18px; /* Kích thước biểu tượng */
+    transition: all 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.icon-button:hover {
+    background-color: #a62c06; /* Màu nền khi hover */
+    cursor: pointer;
+}
+
+.icon-button i {
+    padding: 10px; /* Đảm bảo biểu tượng không bị lệch */
+}
+
 
 @media (max-width: 992px) {
     /* Sidebar điều chỉnh trên màn hình vừa */

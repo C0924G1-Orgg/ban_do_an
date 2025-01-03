@@ -1,0 +1,76 @@
+
+.main-content {
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin-left: 260px; /* Đảm bảo nội dung không bị che khuất bởi sidebar */
+}
+
+.about-content {
+    max-width: 900px; /* Giới hạn chiều rộng của nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Căn trái nội dung bên trong */
+}
+
+.about-content h2, .about-content h3 {
+    text-align: center; /* Căn giữa các tiêu đề h2 và h3 */
+    color: #333;
+}
+
+.about-content p {
+    text-align: justify; /* Căn đều các đoạn văn bản */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.mission-vision, .team-section, .history-section {
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử */
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px; /* Giới hạn chiều rộng của mỗi thành viên */
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #912b42;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.cart-icon:hover {
+    background-color: #7c2235;
+}

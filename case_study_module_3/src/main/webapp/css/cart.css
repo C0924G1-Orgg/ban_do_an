@@ -1,0 +1,119 @@
+/* Định dạng chung cho giỏ hàng */
+.main-content {
+    background-color: #f8f9fa;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #f1f1f1;
+    color: #495057;
+}
+
+table img {
+    width: 100px;
+    height: auto;
+}
+
+.quantity-select {
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+h3#total-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    color: white;
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.9rem;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.btn {
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+    }
+
+    .cart-icon {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+}

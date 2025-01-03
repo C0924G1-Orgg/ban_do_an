@@ -64,8 +64,7 @@
                                             <input type="hidden" name="quantity" value="1"> <!-- Mặc định số lượng là 1 -->
                                             <button type="submit" class="btn btn-primary w-100">Thêm vào giỏ</button>
                                         </form>
-
-                                        <a href="${pageContext.request.contextPath}/food/details?id=${food.foodId}"
+                                        <a href="${pageContext.request.contextPath}/user/food_details?id=${food.foodId}"
                                            class="btn btn-secondary w-100 mt-2">Chi tiết</a>
                                     </div>
                                 </div>
@@ -76,7 +75,6 @@
             </c:choose>
         </div>
     </div>
-
     <!-- Cart Icon -->
     <div class="cart-icon">
         <a href="${pageContext.request.contextPath}/cart?action=view">

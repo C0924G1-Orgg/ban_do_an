@@ -16,11 +16,9 @@ import java.util.List;
 public class FoodControllerUser extends HttpServlet {
     private final IFoodService foodService = new FoodService();
 
-    // Constructor mặc định
     public FoodControllerUser() {
         super();
     }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Food> foods = foodService.getAll();

@@ -26,7 +26,7 @@
     </nav>
   </div>
   <div class="contact-info">
-    <p><i class="fas fa-phone-alt"></i> 0901234567</p>
+    <p><i class="fas fa-phone-alt"></i> 0912345678</p>
     <a href="https://facebook.com" target="_blank">
       <i class="fab fa-facebook" style="color: blue;"></i> Facebook
     </a>
@@ -46,9 +46,9 @@
     <h2><i class="fas fa-phone-alt"></i> Liên hệ với chúng tôi</h2>
     <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, xin vui lòng liên hệ với chúng tôi qua các kênh sau:</p>
     <ul>
-      <li><i class="fas fa-envelope"></i> Email: support@food.com</li>
+      <li><i class="fas fa-envelope"></i> Email: supportfood@gmail.com</li>
       <li><i class="fas fa-phone"></i> Điện thoại: 0123 456 789</li>
-      <li><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</li>
+      <li><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường TCV, Thanh Khê, Đà Nẵng</li>
     </ul>
 
     <!-- Contact Form -->

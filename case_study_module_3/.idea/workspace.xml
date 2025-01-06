@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98429e21-874a-4ad4-b528-33fb476ff58f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/service/IOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/service/impl/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/dto/FoodDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/dto/FoodDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/model/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/RestaurantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/case_study_module_3/controller/repository/RestaurantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/update.jsp" afterDir="false" />
+    <list default="true" id="1ad93d8d-8464-48f5-90b0-ddbffb776eec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.." afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/artifacts/Gradle___com_example___case_study_module_3_1_0_SNAPSHOT_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/artifacts/Gradle___com_example___case_study_module_3_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/modules/case_study_module_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/modules/case_study_module_3.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/modules/case_study_module_3.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../casestudynew/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../casestudynew/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../casestudynew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../casestudynew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudynew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudynew/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -51,36 +59,31 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2r42XFvwaPtusfQjtVt23wuv2m7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2r73tFuvYLGYmBwbvJlgErLaTuD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build case_study_module_3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.98.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codegym/casestudy_nhom/ban_do_an/case_study_module_3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build case_study_module_3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 9.0.98.executor": "Run",
+    "Tomcat Server.dashboard.jsp.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Codegym/casestudy_nhom/ban_do_an/ban_do_an/case_study_module_3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.98" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.98" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -92,7 +95,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="f721c8af-1190-47b3-be73-cff770bb41ce" />
+        <option name="BASE_DIRECTORY_NAME" value="2927e089-fe72-4c5c-918e-4736554169ff" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -100,7 +103,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52657" />
+        <option name="DEBUG_PORT" value="62879" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -181,13 +184,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="98429e21-874a-4ad4-b528-33fb476ff58f" name="Changes" comment="" />
-      <created>1735804064502</created>
+      <changelist id="1ad93d8d-8464-48f5-90b0-ddbffb776eec" name="Changes" comment="" />
+      <created>1735896498969</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1735804064502</updated>
-      <workItem from="1735804065535" duration="3885000" />
-      <workItem from="1735827828569" duration="9359000" />
+      <updated>1735896498969</updated>
+      <workItem from="1735896499995" duration="112000" />
+      <workItem from="1735924963349" duration="806000" />
+      <workItem from="1736066091085" duration="5950000" />
     </task>
     <servers />
   </component>

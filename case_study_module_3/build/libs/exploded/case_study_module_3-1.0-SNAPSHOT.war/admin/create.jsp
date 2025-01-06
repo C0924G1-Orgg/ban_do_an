@@ -38,6 +38,7 @@
       <select id="restaurantId" name="restaurantId" class="form-select" required>
         <c:forEach var="restaurant" items="${restaurants}">
           <option value="${restaurant.restaurant_id}">${restaurant.restaurant_name}</option>
+          <option value="${restaurant.restaurantId}">${restaurant.restaurantName}</option>
         </c:forEach>
       </select>
     </div>

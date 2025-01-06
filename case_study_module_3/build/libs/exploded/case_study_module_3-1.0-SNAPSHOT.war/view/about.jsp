@@ -85,6 +85,10 @@
 </div>
 
 <div class="cart-icon">
+  <a href="${pageContext.request.contextPath}/cart?action=view">
+    <i class="bi bi-cart"></i>
+    <span class="badge bg-danger">${cartSize}</span>
+  </a>
   <i class="bi bi-cart"></i>
 </div>
 

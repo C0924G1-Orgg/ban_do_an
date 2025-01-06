@@ -67,6 +67,69 @@
         </div>
         <jsp:include page="/partials/footer.jsp" />
     </div>
+<div class="main-content">
+    <div class="banner">
+        <h1 style="font-size: 30px">THỰC ĐƠN HÔM NAY</h1>
+    </div>
+    <div class="food-menu">
+        <div class="container">
+            <h2>THỰC ĐƠN</h2>
+            <div class="row">
+                <c:forEach var="food" items="${foods}">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${food.foodName}</h5>
+                                <p class="card-text">${food.foodDescription}</p>
+                                <p class="card-text">Giá: ${food.foodPrice} VND</p>
+                                <td>
+                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm"
+                                       onclick="showModal('delete', ${food.foodId});">Xóa</a>
+                                </td>
+                            </div>
+                        </div>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-icon">
+        <i class="bi bi-cart"></i>
+    </div>
+    <jsp:include page="/partials/footer.jsp" />
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Xác nhận hành động</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn <span id="actionType"></span> món ăn này?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <a href="#" id="confirmActionButton" class="btn btn-danger">Xác nhận</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showModal(action, foodId) {
+        const actionText = action === 'delete' ? 'xóa' : '';
+        const actionUrl = `/food?action=${action}&id=${foodId}`;
+        document.getElementById('actionType').innerText = actionText;
+        const confirmButton = document.getElementById('confirmActionButton');
+        confirmButton.href = actionUrl;
+        confirmButton.classList.toggle('btn-danger', action === 'delete');
+        new bootstrap.Modal(document.getElementById('confirmModal')).show();
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -37,6 +37,4 @@
         <url-pattern>/gioi-thieu</url-pattern>
     </servlet-mapping>
 
-    <!--thực đơn-->
-
 </web-app>

@@ -1,20 +1,22 @@
 package com.example.case_study_module_3.controller.repository;
 
 import com.example.case_study_module_3.controller.model.Customer;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerRepository {
 
+    private Connection getConnection() throws SQLException {
+        return BaseRepository.getConnection();
+    }
+
     public List<Customer> getAll() {
         List<Customer> customers = new ArrayList<>();
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "SELECT * FROM customers"
-            );
-            ResultSet resultSet = statement.executeQuery();
+        String query = "SELECT * FROM customers";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query);
+             ResultSet resultSet = statement.executeQuery()) {
             while (resultSet.next()) {
                 customers.add(mapResultSetToCustomer(resultSet));
             }
@@ -25,11 +27,9 @@ public class CustomerRepository {
     }
 
     public void save(Customer customer) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "INSERT INTO customers (customer_name, customer_email, customer_password, customer_phone, customer_address) " +
-                            "VALUES (?, ?, ?, ?, ?)"
-            );
+        String query = "INSERT INTO customers (customer_name, customer_email, customer_password, customer_phone, customer_address, customer_is_admin) VALUES (?, ?, ?, ?, ?, ?)";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, customer.getCustomerName());
             statement.setString(2, customer.getCustomerEmail());
             statement.setString(3, customer.getCustomerPassword());
@@ -42,60 +42,53 @@ public class CustomerRepository {
     }
 
     public boolean deleteById(int customerId) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "DELETE FROM customers WHERE customer_id = ?"
-            );
+        String query = "DELETE FROM customers WHERE customer_id = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, customerId);
-            int rowsAffected = statement.executeUpdate();
-            return rowsAffected > 0;
+            return statement.executeUpdate() > 0;
         } catch (SQLException e) {
             throw new RuntimeException("Error deleting customer by ID", e);
         }
     }
 
     public boolean update(Customer customer) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "UPDATE customers SET customer_name = ?, customer_email = ?, customer_password = ?, customer_phone = ?, customer_address = ? " +
-                            "WHERE customer_id = ?"
-            );
+        String query = "UPDATE customers SET customer_name = ?, customer_email = ?, customer_password = ?, customer_phone = ?, customer_address = ? WHERE customer_id = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, customer.getCustomerName());
             statement.setString(2, customer.getCustomerEmail());
             statement.setString(3, customer.getCustomerPassword());
             statement.setString(4, customer.getCustomerPhone());
             statement.setString(5, customer.getCustomerAddress());
             statement.setInt(6, customer.getCustomerId());
-            int rowsAffected = statement.executeUpdate();
-            return rowsAffected > 0;
+            return statement.executeUpdate() > 0;
         } catch (SQLException e) {
             throw new RuntimeException("Error updating customer", e);
         }
     }
 
     public boolean updateIsAdmin(int customerId, boolean newRole) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "UPDATE customers SET role = ? WHERE customer_id = ?"
-            );
+        String query = "UPDATE customers SET customer_is_admin = ? WHERE customer_id = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setBoolean(1, newRole);
             statement.setInt(2, customerId);
-            int rowsAffected = statement.executeUpdate();
-            return rowsAffected > 0;
+            return statement.executeUpdate() > 0;
         } catch (SQLException e) {
             throw new RuntimeException("Error updating customer role", e);
         }
     }
 
     public Customer findById(int customerId) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "SELECT * FROM customers WHERE customer_id = ?"
-            );
+        String query = "SELECT * FROM customers WHERE customer_id = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, customerId);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                return mapResultSetToCustomer(resultSet);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return mapResultSetToCustomer(resultSet);
+                }
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error finding customer by ID", e);
@@ -104,13 +97,13 @@ public class CustomerRepository {
     }
 
     public boolean isEmailExists(String email) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "SELECT * FROM customers WHERE customer_email = ?"
-            );
+        String query = "SELECT * FROM customers WHERE customer_email = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, email);
-            ResultSet resultSet = statement.executeQuery();
-            return resultSet.next();
+            try (ResultSet resultSet = statement.executeQuery()) {
+                return resultSet.next();
+            }
         } catch (SQLException e) {
             throw new RuntimeException("Error checking email existence", e);
         }
@@ -118,23 +111,33 @@ public class CustomerRepository {
 
     public boolean register(Customer customer) {
         if (isEmailExists(customer.getCustomerEmail())) {
-            return false;
+            return false; // Email đã tồn tại
         }
-        customer.setIsAdmin(false);
-        save(customer);
-        return true;
+        String query = "INSERT INTO customers (customer_name, customer_email, customer_password, customer_phone, customer_address, customer_is_admin) VALUES (?, ?, ?, ?, ?, ?)";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setString(1, customer.getCustomerName());
+            statement.setString(2, customer.getCustomerEmail());
+            statement.setString(3, customer.getCustomerPassword());
+            statement.setString(4, customer.getCustomerPhone());
+            statement.setString(5, customer.getCustomerAddress());
+            statement.setBoolean(6, customer.isAdmin());
+            return statement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            throw new RuntimeException("Error registering customer", e);
+        }
     }
 
     public Customer login(String email, String password) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "SELECT * FROM customers WHERE customer_email = ? AND customer_password = ?"
-            );
+        String query = "SELECT * FROM customers WHERE customer_email = ? AND customer_password = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, email);
             statement.setString(2, password);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                return mapResultSetToCustomer(resultSet);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return mapResultSetToCustomer(resultSet);
+                }
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error logging in", e);
@@ -143,14 +146,14 @@ public class CustomerRepository {
     }
 
     public Customer findByEmail(String email) {
-        try {
-            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
-                    "SELECT * FROM customers WHERE customer_email = ?"
-            );
+        String query = "SELECT * FROM customers WHERE customer_email = ?";
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, email);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                return mapResultSetToCustomer(resultSet);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return mapResultSetToCustomer(resultSet);
+                }
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error finding customer by email", e);

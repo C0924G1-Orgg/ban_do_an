@@ -38,6 +38,7 @@
             <a href="https://instagram.com" target="_blank">
                 <i class="fab fa-instagram" style="color: #912b42"></i> Instagram
             </a>
+            <a href="/login">Login</a> | <a href="/register">Register</a>
         </div>
     </div>
 
@@ -55,5 +56,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

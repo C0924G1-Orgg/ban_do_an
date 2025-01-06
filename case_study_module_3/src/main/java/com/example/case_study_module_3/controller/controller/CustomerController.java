@@ -33,7 +33,7 @@ public class CustomerController extends HttpServlet {
                 showEditForm(request, response);
                 break;
             default:
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("/view/index.jsp");
         }
     }
 
@@ -45,12 +45,6 @@ public class CustomerController extends HttpServlet {
         }
 
         switch (action) {
-            case "register":
-                registerCustomer(request, response);
-                break;
-            case "login":
-                loginCustomer(request, response);
-                break;
             case "update":
                 updateCustomer(request, response);
                 break;
@@ -58,14 +52,14 @@ public class CustomerController extends HttpServlet {
                 updateIsAdmin(request, response);
                 break;
             default:
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("/view/index.jsp");
         }
     }
 
     private void showCustomerList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Customer> customers = customerService.getAll();
         request.setAttribute("customers", customers);
-        request.getRequestDispatcher("/customer_list.jsp").forward(request, response);
+        request.getRequestDispatcher("/admin/customer_list.jsp").forward(request, response);
     }
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -75,50 +69,7 @@ public class CustomerController extends HttpServlet {
                 .findFirst()
                 .orElse(null);
         request.setAttribute("customer", existingCustomer);
-        request.getRequestDispatcher("/edit_customer.jsp").forward(request, response);
-    }
-
-    private void registerCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        String phone = request.getParameter("phone");
-        String address = request.getParameter("address");
-        boolean isAdmin = Boolean.parseBoolean(request.getParameter("isAdmin"));
-
-        Customer newCustomer = new Customer(0, name, email, password, phone, address, isAdmin);
-        boolean success = customerService.register(newCustomer);
-
-        if (success) {
-            response.sendRedirect("customers?action=list");
-        } else {
-            response.sendRedirect("register.jsp?error=Email already exists");
-        }
-    }
-
-    private void loginCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        String remember = request.getParameter("remember");
-
-        Customer customer = customerService.login(email, password);
-
-        if (customer != null) {
-            HttpSession session = request.getSession();
-            session.setAttribute("loggedInCustomer", customer);
-            session.setMaxInactiveInterval(30 * 60); // 30 phút
-
-            if ("on".equals(remember)) {
-                Cookie loginCookie = new Cookie("user", customer.getCustomerEmail());
-                loginCookie.setMaxAge(30 * 24 * 60 * 60); // 30 ngày
-                response.addCookie(loginCookie);
-            }
-
-            response.sendRedirect("dashboard.jsp");
-        } else {
-            request.setAttribute("error", "Invalid email or password");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
-        }
+        request.getRequestDispatcher("/admin/edit_customer.jsp").forward(request, response);
     }
 
     private void updateCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {

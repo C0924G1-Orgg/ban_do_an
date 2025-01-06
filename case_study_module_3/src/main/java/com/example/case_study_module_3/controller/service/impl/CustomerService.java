@@ -11,7 +11,7 @@ public class CustomerService implements ICustomerService {
     private CustomerRepository customerRepository;
 
     public CustomerService() {
-        this.customerRepository = customerRepository;
+        this.customerRepository = new CustomerRepository();
     }
 
     @Override

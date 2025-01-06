@@ -1,35 +1,31 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
   <title>Customer List</title>
 </head>
 <body>
-<h1>Customer List</h1>
+<h2>Customer List</h2>
 <table border="1">
-  <thead>
   <tr>
+    <th>ID</th>
     <th>Name</th>
     <th>Email</th>
     <th>Phone</th>
     <th>Address</th>
     <th>Actions</th>
   </tr>
-  </thead>
-  <tbody>
   <c:forEach var="customer" items="${customers}">
     <tr>
-      <td>${customer.customerName}</td>
-      <td>${customer.customerEmail}</td>
-      <td>${customer.customerPhone}</td>
-      <td>${customer.customerAddress}</td>
+      <td>${customer.customerId}</td>
+      <td>${customer.name}</td>
+      <td>${customer.email}</td>
+      <td>${customer.phone}</td>
+      <td>${customer.address}</td>
       <td>
-        <a href="/admin/customers?action=edit&id=${customer.id}">Edit</a> |
-        <a href="/admin/customers?action=delete&id=${customer.id}">Delete</a>
+        <a href="customers?action=edit&id=${customer.customerId}">Edit</a>
       </td>
     </tr>
   </c:forEach>
-  </tbody>
 </table>
 </body>
 </html>

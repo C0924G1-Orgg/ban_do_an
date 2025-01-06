@@ -69,4 +69,8 @@ public class CustomerService implements ICustomerService {
     public Customer findByEmail(String email) {
         return customerRepository.findByEmail(email);
     }
+    @Override
+    public boolean updateIsAdmin(int id, boolean isAdmin) {
+        return customerRepository.updateIsAdmin(id, isAdmin);
+    }
 }

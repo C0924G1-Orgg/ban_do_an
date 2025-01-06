@@ -5,9 +5,7 @@ import com.example.case_study_module_3.controller.service.ICustomerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
 
@@ -17,7 +15,6 @@ public class CustomerController extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        // Khởi tạo CustomerService với Repository (cần chỉnh sửa để phù hợp với ứng dụng của bạn)
         this.customerService = (ICustomerService) getServletContext().getAttribute("customerService");
     }
 
@@ -57,6 +54,9 @@ public class CustomerController extends HttpServlet {
             case "update":
                 updateCustomer(request, response);
                 break;
+            case "updateIsAdmin":
+                updateIsAdmin(request, response);
+                break;
             default:
                 response.sendRedirect("index.jsp");
         }
@@ -84,8 +84,9 @@ public class CustomerController extends HttpServlet {
         String password = request.getParameter("password");
         String phone = request.getParameter("phone");
         String address = request.getParameter("address");
+        boolean isAdmin = Boolean.parseBoolean(request.getParameter("isAdmin"));
 
-        Customer newCustomer = new Customer(0, name, email, password, phone, address);
+        Customer newCustomer = new Customer(0, name, email, password, phone, address, isAdmin);
         boolean success = customerService.register(newCustomer);
 
         if (success) {
@@ -98,11 +99,21 @@ public class CustomerController extends HttpServlet {
     private void loginCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String remember = request.getParameter("remember");
 
         Customer customer = customerService.login(email, password);
 
         if (customer != null) {
-            request.getSession().setAttribute("loggedInCustomer", customer);
+            HttpSession session = request.getSession();
+            session.setAttribute("loggedInCustomer", customer);
+            session.setMaxInactiveInterval(30 * 60); // 30 phút
+
+            if ("on".equals(remember)) {
+                Cookie loginCookie = new Cookie("user", customer.getCustomerEmail());
+                loginCookie.setMaxAge(30 * 24 * 60 * 60); // 30 ngày
+                response.addCookie(loginCookie);
+            }
+
             response.sendRedirect("dashboard.jsp");
         } else {
             request.setAttribute("error", "Invalid email or password");
@@ -117,14 +128,23 @@ public class CustomerController extends HttpServlet {
         String password = request.getParameter("password");
         String phone = request.getParameter("phone");
         String address = request.getParameter("address");
+        boolean isAdmin = Boolean.parseBoolean(request.getParameter("isAdmin"));
 
-        Customer updatedCustomer = new Customer(id, name, email, password, phone, address);
+        Customer updatedCustomer = new Customer(id, name, email, password, phone, address, isAdmin);
         boolean success = customerService.update(updatedCustomer);
 
         if (success) {
             response.sendRedirect("customers?action=list");
         } else {
             response.sendRedirect("edit_customer.jsp?error=Update failed");
+        }
+    }
+
+    private void updateIsAdmin(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Customer loggedInCustomer = (Customer) request.getSession().getAttribute("loggedInCustomer");
+        if (loggedInCustomer == null || !loggedInCustomer.isAdmin()) {
+            response.sendRedirect("login.jsp?error=Unauthorized");
+            return;
         }
     }
 }

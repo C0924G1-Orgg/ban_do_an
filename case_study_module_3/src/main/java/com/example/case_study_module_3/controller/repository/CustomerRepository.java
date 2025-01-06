@@ -8,7 +8,6 @@ import java.util.List;
 
 public class CustomerRepository {
 
-    // Lấy danh sách tất cả khách hàng
     public List<Customer> getAll() {
         List<Customer> customers = new ArrayList<>();
         try {
@@ -25,7 +24,6 @@ public class CustomerRepository {
         return customers;
     }
 
-    // Lưu khách hàng mới
     public void save(Customer customer) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -43,7 +41,6 @@ public class CustomerRepository {
         }
     }
 
-    // Xóa khách hàng theo ID
     public boolean deleteById(int customerId) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -57,7 +54,6 @@ public class CustomerRepository {
         }
     }
 
-    // Cập nhật thông tin khách hàng
     public boolean update(Customer customer) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -77,7 +73,20 @@ public class CustomerRepository {
         }
     }
 
-    // Tìm khách hàng theo ID
+    public boolean updateIsAdmin(int customerId, boolean newRole) {
+        try {
+            PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
+                    "UPDATE customers SET role = ? WHERE customer_id = ?"
+            );
+            statement.setBoolean(1, newRole);
+            statement.setInt(2, customerId);
+            int rowsAffected = statement.executeUpdate();
+            return rowsAffected > 0;
+        } catch (SQLException e) {
+            throw new RuntimeException("Error updating customer role", e);
+        }
+    }
+
     public Customer findById(int customerId) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -94,7 +103,6 @@ public class CustomerRepository {
         return null;
     }
 
-    // Kiểm tra email đã tồn tại hay chưa
     public boolean isEmailExists(String email) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -108,16 +116,15 @@ public class CustomerRepository {
         }
     }
 
-    // Đăng ký khách hàng mới
     public boolean register(Customer customer) {
         if (isEmailExists(customer.getCustomerEmail())) {
-            return false; // Email đã tồn tại
+            return false;
         }
+        customer.setIsAdmin(false);
         save(customer);
         return true;
     }
 
-    // Đăng nhập khách hàng
     public Customer login(String email, String password) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -132,10 +139,9 @@ public class CustomerRepository {
         } catch (SQLException e) {
             throw new RuntimeException("Error logging in", e);
         }
-        return null; // Trả về null nếu không tìm thấy
+        return null;
     }
 
-    // Tìm khách hàng theo email
     public Customer findByEmail(String email) {
         try {
             PreparedStatement statement = BaseRepository.getConnection().prepareStatement(
@@ -152,7 +158,6 @@ public class CustomerRepository {
         return null;
     }
 
-    // Phương thức helper để ánh xạ từ ResultSet sang đối tượng Customer
     private Customer mapResultSetToCustomer(ResultSet resultSet) throws SQLException {
         int id = resultSet.getInt("customer_id");
         String name = resultSet.getString("customer_name");
@@ -160,6 +165,7 @@ public class CustomerRepository {
         String password = resultSet.getString("customer_password");
         String phone = resultSet.getString("customer_phone");
         String address = resultSet.getString("customer_address");
-        return new Customer(id, name, email, password, phone, address);
+        boolean isAdmin = resultSet.getBoolean("customer_is_admin");
+        return new Customer(id, name, email, password, phone, address, isAdmin);
     }
 }

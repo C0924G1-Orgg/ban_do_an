@@ -9,17 +9,19 @@ public class Customer {
     private String customerPassword;
     private String customerPhone;
     private String customerAddress;
+    private boolean isAdmin;
 
     public Customer() {
     }
 
-    public Customer(int customerId, String customerName, String customerEmail, String customerPassword, String customerPhone, String customerAddress) {
+    public Customer(int customerId, String customerName, String customerEmail, String customerPassword, String customerPhone, String customerAddress, boolean isAdmin) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerEmail = customerEmail;
         this.customerPassword = customerPassword;
         this.customerPhone = customerPhone;
         this.customerAddress = customerAddress;
+        this.isAdmin = isAdmin;
     }
 
     public int getCustomerId() {
@@ -68,6 +70,14 @@ public class Customer {
 
     public void setCustomerAddress(String customerAddress) {
         this.customerAddress = customerAddress;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
     }
 
     @Override

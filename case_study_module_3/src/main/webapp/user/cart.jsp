@@ -7,9 +7,9 @@
     <title>Giỏ Hàng - Food</title>
     <link rel="stylesheet" type="text/css" href="/css/cart.css">
     <jsp:include page="/partials/head.jsp"></jsp:include>
-x
 </head>
 <body>
+<%--sidebar--%>
 <div class="collapse d-md-block sidebar" id="sidebar">
     <div>
         <div class="logo">
@@ -39,7 +39,7 @@ x
         <h1 style="text-align: left">GIỎ HÀNG</h1>
     </div>
 
-    <h1>Giỏ Hàng</h1>
+    <h1 style="text-align: center">Giỏ Hàng</h1>
 
     <c:choose>
         <c:when test="${not empty cartItems}">
@@ -83,11 +83,25 @@ x
             <h3 style="text-align: center;">Tổng cộng: <span id="total-price"><fmt:formatNumber value="${total}" type="currency" currencySymbol="VND"/></span></h3>
         </c:when>
         <c:otherwise>
-            <p>Giỏ hàng của bạn hiện tại không có sản phẩm nào.</p>
+            <div style="text-align: center;">
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: center;">
+                    <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng</th>
+                        <th>Hành động</th>
+                    </tr>
+                    </thead>
+                </table>
+                <p>Giỏ hàng của bạn hiện tại không có sản phẩm nào.</p>
+            </div>
         </c:otherwise>
     </c:choose>
 
-    <div style="text-align: center; margin-top: 20px;">
+    <div style="text-align: center; ">
         <a href="${pageContext.request.contextPath}/thuc-don" class="btn btn-secondary">Quay lại thực đơn</a>
         <a href="${pageContext.request.contextPath}/payment" class="btn btn-success">Thanh toán</a>
     </div>

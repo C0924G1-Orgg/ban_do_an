@@ -8,11 +8,11 @@
             </div>
             <!-- Navigation -->
             <nav>
-                <a class="nav-link" href="#">TRANG CHỦ</a>
-                <a class="nav-link" href="${pageContext.request.contextPath}/admin/product_list.jsp">THỰC ĐƠN</a>
-                <a class="nav-link" href="#">KHUYẾN MÃI</a>
-                <a class="nav-link" href="#">LIÊN HỆ</a>
-                <a class="nav-link" href="#">GIỚI THIỆU</a>
+                <a class="nav-link" href="trang-chu">TRANG CHỦ</a>
+                <a class="nav-link" href="thuc-don">THỰC ĐƠN</a>
+                <a class="nav-link" href="khuyen-mai">KHUYẾN MÃI</a>
+                <a class="nav-link" href="lien-he">LIÊN HỆ</a>
+                <a class="nav-link" href="gioi-thieu">GIỚI THIỆU</a>
             </nav>
         </div>
         <!-- Contact Info -->

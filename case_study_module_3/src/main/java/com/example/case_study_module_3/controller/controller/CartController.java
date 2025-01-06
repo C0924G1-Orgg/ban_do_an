@@ -60,7 +60,7 @@ public class CartController extends HttpServlet {
         resp.sendRedirect("cart?action=view");
     }
 
-    private List<CartItem> getCartItemsFromCookies(HttpServletRequest req) {
+    public List<CartItem> getCartItemsFromCookies(HttpServletRequest req) {
         List<CartItem> cartItems = new ArrayList<>();
         javax.servlet.http.Cookie[] cookies = req.getCookies();
 

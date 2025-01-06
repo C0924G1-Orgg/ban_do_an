@@ -103,9 +103,6 @@ h3#total-price {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .main-content {
-        padding: 10px;
-    }
 
     table th, table td {
         font-size: 0.9rem;

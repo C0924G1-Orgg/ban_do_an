@@ -3,7 +3,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
-<jsp:include page="/partials/head.jsp"/>
+<head>
+    <jsp:include page="/partials/head.jsp"/>
+    <style>
+        #product-modal .modal-dialog {
+            max-width: 500px; /* Giảm chiều rộng modal */
+            width: 80%; /* Đảm bảo modal không chiếm hết chiều rộng màn hình */
+        }
+
+        #product-modal .modal-content {
+            padding: 15px; /* Giảm khoảng cách bên trong modal */
+        }
+
+        #product-modal .modal-body {
+            max-height: 400px; /* Giới hạn chiều cao của modal */
+            overflow-y: auto; /* Thêm thanh cuộn nếu nội dung dài */
+        }
+
+    </style>
+</head>
+
 <body>
 <!-- Sidebar -->
 <div class="collapse d-md-block sidebar" id="sidebar">
@@ -35,7 +54,7 @@
 <!-- Main Content -->
 <div class="main-content">
     <div class="banner">
-        <h1 style="font-size: 30px">THỰC ĐƠN HÔM NAY</h1>
+        <h1>THỰC ĐƠN HÔM NAY</h1>
     </div>
     <div class="food-menu">
         <div class="container">
@@ -107,8 +126,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modal-product-name">Chi tiết sản phẩm</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h4  class="modal-title" id="modal-product-name" style="text-transform: uppercase;
+                font-weight: bold; color:#772704">Chi tiết sản phẩm</h4>
             </div>
             <div class="modal-body">
                 <img id="modal-product-image" class="img-fluid mb-3" alt="Product Image">

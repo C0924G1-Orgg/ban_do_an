@@ -1,52 +1,81 @@
 package com.example.case_study_module_3.controller.controller;
 
 import com.example.case_study_module_3.controller.model.CartItem;
-import com.example.case_study_module_3.controller.repository.BaseRepository;
-import com.example.case_study_module_3.controller.repository.OrderRepository;
-import com.example.case_study_module_3.controller.service.impl.PaymentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Cookie;
 import java.io.IOException;
-import java.sql.Connection;
 import java.util.List;
+import java.util.UUID;
 
-@WebServlet("/payment")
+@WebServlet(name = "PaymentController", urlPatterns = {"/payment"})
 public class PaymentController extends HttpServlet {
-    private PaymentService paymentService;
+
+    private static final String VNP_TMNCODE = "PCLJDQ21";
+    private static final String VNP_HASHSECRET = "U6VCMLUN8NG7YCSXFL74L7OWEJM60PVV";
 
     @Override
-    public void init() throws ServletException {
-        Connection connection = BaseRepository.getConnection();
-        OrderRepository orderRepository = new OrderRepository(connection);
-        paymentService = new PaymentService(orderRepository);
-    }
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            List<CartItem> cartItems = getCartItemsFromCookies(req);
+            double total = cartItems.stream().mapToDouble(CartItem::getTotalPrice).sum();
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<CartItem> cartItems = (List<CartItem>) request.getSession().getAttribute("cartItems");
-        if (cartItems != null) {
-            double totalAmount = cartItems.stream().mapToDouble(CartItem::getTotalPrice).sum();
-            request.setAttribute("cartItems", cartItems);
-            request.setAttribute("totalAmount", totalAmount);
+            req.setAttribute("cartItems", cartItems);
+            req.setAttribute("total", total);
+
+            req.getRequestDispatcher("/user/payment.jsp").forward(req, resp);
+        } catch (Exception e) {
+            e.printStackTrace();
+            req.setAttribute("errorMessage", "Lỗi khi tải trang thanh toán. Vui lòng thử lại!");
+            req.getRequestDispatcher("/user/payment.jsp").forward(req, resp);
         }
-        request.getRequestDispatcher("/user/payment.jsp").forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<CartItem> cartItems = (List<CartItem>) request.getSession().getAttribute("cartItems");
-        if (cartItems != null) {
-            double totalAmount = cartItems.stream().mapToDouble(CartItem::getTotalPrice).sum();
-            boolean paymentProcessed = paymentService.processPayment(cartItems, totalAmount);
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            String name = req.getParameter("name");
+            String phone = req.getParameter("phone");
+            String address = req.getParameter("address");
+            double total = Double.parseDouble(req.getParameter("total"));
+//đoạn code dưới giúp trả về trang localhost của mình khi thanh ton VNPay thành công
+            String returnUrl = "http://localhost:8080/payment-success";
+            String orderInfo = "Thanh toán đơn hàng tại FoodStore";
+            String orderId = UUID.randomUUID().toString();
 
-            if (paymentProcessed) {
-                response.sendRedirect(request.getContextPath() + "/payment-success.jsp");
-            } else {
-                response.sendRedirect(request.getContextPath() + "/payment-error.jsp");
+            String paymentUrl = VNPayService.generatePaymentUrl(returnUrl, total, orderInfo, orderId);
+            clearCartCookies(req, resp);
+            resp.sendRedirect(paymentUrl); // Điều hướng đến URL thanh toán của VNPay
+        } catch (Exception e) {
+            e.printStackTrace();
+            req.setAttribute("errorMessage", "Có lỗi xảy ra trong quá trình xử lý thanh toán!");
+            req.getRequestDispatcher("/user/payment.jsp").forward(req, resp);
+        }
+    }
+
+
+    private List<CartItem> getCartItemsFromCookies(HttpServletRequest req) {
+        try {
+            return new CartController().getCartItemsFromCookies(req);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Không thể lấy giỏ hàng từ cookies");
+        }
+    }
+
+    private void clearCartCookies(HttpServletRequest req, HttpServletResponse resp) {
+        Cookie[] cookies = req.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().startsWith("cartItem_")) {
+                    cookie.setMaxAge(0);
+                    cookie.setPath("/");
+                    resp.addCookie(cookie);
+                }
             }
         }
     }

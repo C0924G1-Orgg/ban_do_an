@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+=======
+>>>>>>> origin/nhat-branch
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -40,12 +43,17 @@
             <a href="https://instagram.com" target="_blank">
                 <i class="fab fa-instagram" style="color: #912b42"></i> Instagram
             </a>
+<<<<<<< HEAD
+=======
+            <a href="/login">Login</a> | <a href="/register">Register</a>
+>>>>>>> origin/nhat-branch
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="main-content">
       <jsp:include page="/partials/banner.jsp" />
+<<<<<<< HEAD
         <div class="food-menu">
             <div class="container">
                 <h2>Món Ăn Nổi Bật</h2>
@@ -72,11 +80,16 @@
         </div>
 
         <jsp:include page="/partials/feedback_form.jsp" />
+=======
+      <jsp:include page="/partials/food_menu.jsp" />
+      <jsp:include page="/partials/feedback_form.jsp" />
+>>>>>>> origin/nhat-branch
       <jsp:include page="/partials/utilities.jsp" />
       <jsp:include page="/partials/footer.jsp" />
     </div>
 
     <div class="cart-icon">
+<<<<<<< HEAD
         <a href="${pageContext.request.contextPath}/cart?action=view">
             <i class="bi bi-cart"></i>
             <span class="badge bg-danger">${cartSize}</span>
@@ -84,5 +97,12 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+=======
+        <i class="bi bi-cart"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+>>>>>>> origin/nhat-branch
 </body>
 </html>

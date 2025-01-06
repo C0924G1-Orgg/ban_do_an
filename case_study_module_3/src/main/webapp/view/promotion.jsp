@@ -203,10 +203,14 @@
 </div>
 
 <div class="cart-icon">
+<<<<<<< HEAD
     <a href="${pageContext.request.contextPath}/cart?action=view">
         <i class="bi bi-cart"></i>
         <span class="badge bg-danger">${cartSize}</span>
     </a>
+=======
+    <i class="bi bi-cart"></i>
+>>>>>>> origin/nhat-branch
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

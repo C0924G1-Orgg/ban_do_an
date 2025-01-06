@@ -8,6 +8,7 @@ public class Food {
     private String foodName;
     private String foodDescription;
     private double foodPrice;
+<<<<<<< HEAD
     private String foodImage;
     private String restaurantName; // Tên nhà hàng
 
@@ -23,6 +24,12 @@ public class Food {
 
     public Food() {
     }
+=======
+
+    public Food() {
+    }
+
+>>>>>>> origin/nhat-branch
     public Food(int foodId, int restaurantId, String foodName, String foodDescription, double foodPrice) {
         this.foodId = foodId;
         this.restaurantId = restaurantId;
@@ -31,6 +38,7 @@ public class Food {
         this.foodPrice = foodPrice;
     }
 
+<<<<<<< HEAD
     public Food(int foodId, int restaurantId, String foodName, String foodDescription, double foodPrice, String foodImage, String restaurantName) {
         this.foodId = foodId;
         this.restaurantId = restaurantId;
@@ -65,6 +73,8 @@ public class Food {
         this.foodImage = image;
     }
 
+=======
+>>>>>>> origin/nhat-branch
     public int getFoodId() {
         return foodId;
     }

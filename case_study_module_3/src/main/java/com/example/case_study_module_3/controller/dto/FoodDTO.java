@@ -1,16 +1,26 @@
 package com.example.case_study_module_3.controller.dto;
 
 public class FoodDTO {
+<<<<<<< HEAD
     private int food_id;
     private int restaurant_id;
     private String food_name;
     private double food_price;
     private String food_description;
     private String restaurant_name;
+=======
+    private int foodId;
+    private int restaurantId;
+    private String foodName;
+    private double foodPrice;
+    private String foodDescription;
+    private String restaurantName;
+>>>>>>> origin/nhat-branch
 
     public FoodDTO() {
     }
 
+<<<<<<< HEAD
     public FoodDTO(int food_id, int restaurant_id, String food_name, double food_price, String food_description, String restaurant_name) {
         this.food_id = food_id;
         this.restaurant_id = restaurant_id;
@@ -66,5 +76,62 @@ public class FoodDTO {
 
     public void setRestaurant_name(String restaurant_name) {
         this.restaurant_name = restaurant_name;
+=======
+    public FoodDTO(int food_id, int restaurantId, String foodName, double foodPrice, String foodDescription, String restaurantName) {
+        this.foodId = food_id;
+        this.restaurantId = restaurantId;
+        this.foodName = foodName;
+        this.foodPrice = foodPrice;
+        this.foodDescription = foodDescription;
+        this.restaurantName = restaurantName;
+    }
+
+    public int getFoodId() {
+        return foodId;
+    }
+
+    public void setFoodId(int foodId) {
+        this.foodId = foodId;
+    }
+
+    public int getRestaurantId() {
+        return restaurantId;
+    }
+
+    public void setRestaurantId(int restaurantId) {
+        this.restaurantId = restaurantId;
+    }
+
+    public String getFoodName() {
+        return foodName;
+    }
+
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
+    }
+
+    public double getFoodPrice() {
+        return foodPrice;
+    }
+
+    public void setFoodPrice(double foodPrice) {
+        this.foodPrice = foodPrice;
+    }
+
+    public String getFoodDescription() {
+        return foodDescription;
+    }
+
+    public void setFoodDescription(String foodDescription) {
+        this.foodDescription = foodDescription;
+    }
+
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+>>>>>>> origin/nhat-branch
     }
 }

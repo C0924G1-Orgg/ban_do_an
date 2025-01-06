@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -20,10 +20,10 @@
 
 <div class="container mt-4">
     <h1 class="mb-4">Cập nhật món ăn</h1>
-
-    <form action="/food" method="post">
+    <form id="updateForm" action="/food" method="post">
         <input type="hidden" name="action" value="update">
         <input type="hidden" name="id" value="${food.food_id}">
+
         <div class="mb-3">
             <label for="name" class="form-label">Tên món ăn:</label>
             <input type="text" id="name" name="name" class="form-control" value="${food.food_name}" required>
@@ -46,10 +46,44 @@
                 </c:forEach>
             </select>
         </div>
+
         <button type="submit" class="btn btn-primary">Cập nhật món ăn</button>
+        <button type="button" class="btn btn-primary" onclick="confirmUpdate()">Cập nhật món ăn</button>
     </form>
     <br>
     <a href="/food" class="btn btn-secondary">Quay lại danh sách</a>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Xác nhận cập nhật</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn cập nhật thông tin món ăn này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmUpdate() {
+        // Hiển thị modal xác nhận
+        const modal = new bootstrap.Modal(document.getElementById('confirmModal'));
+        modal.show();
+    }
+
+    function submitForm() {
+        // Gửi form sau khi xác nhận
+        document.getElementById('updateForm').submit();
+    }
+</script>
 </body>
 </html>

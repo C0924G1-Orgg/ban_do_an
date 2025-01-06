@@ -28,13 +28,13 @@ public class FoodRepository {
                 String food_image = resultSet.getString("food_image"); // Thêm dòng này để lấy cột image
 
                 foods.add(new Food(food_id, restaurant_id, food_name, food_description, food_price, food_image));
+                foods.add(new Food(food_id, restaurant_id, food_name, food_description, food_price));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return foods;
     }
-
 
     public List<FoodDTO> getAllDTO() {
         List<FoodDTO> foodDTOs = new ArrayList<>();
@@ -165,6 +165,5 @@ public class FoodRepository {
         }
         return null;
     }
-
 
 }

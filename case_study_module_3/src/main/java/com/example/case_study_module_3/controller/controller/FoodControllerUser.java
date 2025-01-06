@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
 @WebServlet(name = "foodControllerUser", urlPatterns = "/thuc-don")
 public class FoodControllerUser extends HttpServlet {
     private final IFoodService foodService = new FoodService();
@@ -29,3 +28,12 @@ public class FoodControllerUser extends HttpServlet {
         foods.forEach(System.out::println);
     }
 }
+
+
+
+
+
+
+
+
+

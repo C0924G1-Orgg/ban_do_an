@@ -4,6 +4,7 @@ body {
     padding: 0;
     display: flex;
 }
+<<<<<<< HEAD
 footer {
     background-color: #343a40;
     color: white;
@@ -11,6 +12,8 @@ footer {
     padding: 20px;
     margin-top: auto;
 }
+=======
+>>>>>>> origin/nhat-branch
 
 /* Sidebar */
 .sidebar {
@@ -311,7 +314,11 @@ textarea {
 }
 .food-menu .btn-primary:hover {
     background-color: #a62c06; /* Slightly darker on hover */
+<<<<<<< HEAD
 }.
+=======
+}
+>>>>>>> origin/nhat-branch
 
 /* Footer */
 footer {
@@ -344,6 +351,7 @@ footer {
 .cart-icon:hover {
     background-color: #a62c06;
 }
+<<<<<<< HEAD
 .d-flex {
     display: flex;
     justify-content: space-between; /* Khoảng cách đều giữa các nút */
@@ -380,6 +388,8 @@ form.me-1 button, a.ms-1 {
     padding: 10px; /* Đảm bảo biểu tượng không bị lệch */
 }
 
+=======
+>>>>>>> origin/nhat-branch
 
 @media (max-width: 992px) {
     /* Sidebar điều chỉnh trên màn hình vừa */

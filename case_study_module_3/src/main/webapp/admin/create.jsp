@@ -37,11 +37,8 @@
       <label for="restaurantId" class="form-label">Nhà hàng:</label>
       <select id="restaurantId" name="restaurantId" class="form-select" required>
         <c:forEach var="restaurant" items="${restaurants}">
-<<<<<<< HEAD
           <option value="${restaurant.restaurant_id}">${restaurant.restaurant_name}</option>
-=======
           <option value="${restaurant.restaurantId}">${restaurant.restaurantName}</option>
->>>>>>> origin/nhat-branch
         </c:forEach>
       </select>
     </div>

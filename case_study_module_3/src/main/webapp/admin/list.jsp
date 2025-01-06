@@ -32,7 +32,6 @@
     </div>
 </div>
 <!-- Main Content -->
-<<<<<<< HEAD
     <div class="main-content">
         <div class="banner">
             <h1 style="font-size: 30px">THỰC ĐƠN HÔM NAY</h1>
@@ -68,7 +67,6 @@
         </div>
         <jsp:include page="/partials/footer.jsp" />
     </div>
-=======
 <div class="main-content">
     <div class="banner">
         <h1 style="font-size: 30px">THỰC ĐƠN HÔM NAY</h1>
@@ -132,7 +130,6 @@
         new bootstrap.Modal(document.getElementById('confirmModal')).show();
     }
 </script>
->>>>>>> origin/nhat-branch
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -5,195 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e114f64-07f8-42a7-87b0-f8ac45e52727" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/7.6/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/artifacts/Gradle___com_example___case_study_module_3_1_0_SNAPSHOT_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/artifacts/Gradle___com_example___case_study_module_3_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/controller/FoodController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/controller/FoodControllerUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/controller/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/dto/FoodDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/dto/OrderDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/model/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/model/Food.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/model/Restaurant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/repository/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/repository/FoodRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/repository/OrderRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/repository/RestaurantRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/IFoodService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/IOrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/IRestaurantService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/IService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/impl/FoodService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/impl/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/classes/java/main/com/example/case_study_module_3/controller/service/impl/RestaurantService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/case_study_module_3-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/controller/FoodController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/controller/FoodControllerUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/controller/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/dto/FoodDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/model/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/model/Food.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/model/Restaurant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/repository/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/repository/FoodRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/repository/RestaurantRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/service/IFoodService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/service/IRestaurantService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/service/IService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/service/impl/FoodService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/classes/com/example/case_study_module_3/controller/service/impl/RestaurantService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-8.0.28.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/admin/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/admin/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/admin/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/ba_chi_cuon_nam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner_thuc_don.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/banner_trai_cay.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/bannerr.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/ga_u_muoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/nam_nuong_ong_tre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/img/nhanvien.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/banner.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/feedback_form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/food_menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/sidebar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/partials/utilities.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/user/food_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/view/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/view/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/view/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/libs/exploded/case_study_module_3-1.0-SNAPSHOT.war/view/promotion.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/customer_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/edit_customer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/casestudynew.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/controller/FoodController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/dto/FoodDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/entity/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/entity/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/repository/FoodRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/repository/RestaurantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/service/IFoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/service/IRestaurantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/service/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/service/impl/FoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/java/com/example/service/impl/RestaurantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/food/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/food/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/food/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/utils/bootstrap.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/view/utils/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudynew/demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/dto/FoodDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/dto/FoodDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IFoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IFoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/FoodControllerAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/FoodControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/FoodControllerUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/PaymentResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/PaymentResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/controller/VNPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/VNPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/dto/FoodDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/dto/FoodDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/model/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/model/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/repository/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/repository/FoodRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/repository/RestaurantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/repository/RestaurantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/ICartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/ICartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IFoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/IFoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IRestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/IRestaurantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/controller/service/impl/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/java/com/example/case_study_module_3/service/impl/RestaurantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/admin/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials/food_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials/food_menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/partials/sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/food_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/user/food_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/promotion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3/src/main/webapp/view/promotion.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,7 +226,7 @@
       <workItem from="1735793382979" duration="11350000" />
       <workItem from="1735811436801" duration="783000" />
       <workItem from="1735867527272" duration="23535000" />
-      <workItem from="1736125513894" duration="15684000" />
+      <workItem from="1736125513894" duration="17405000" />
     </task>
     <servers />
   </component>

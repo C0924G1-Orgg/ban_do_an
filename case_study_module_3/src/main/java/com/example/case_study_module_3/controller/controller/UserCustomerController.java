@@ -32,7 +32,7 @@ public class UserCustomerController extends HttpServlet {
                 logoutCustomer(request, response);
                 break;
             default:
-                response.sendRedirect("../login.jsp");
+                response.sendRedirect("/user/login.jsp");
                 break;
         }
     }
@@ -55,7 +55,7 @@ public class UserCustomerController extends HttpServlet {
                 updateCustomer(request, response);
                 break;
             default:
-                response.sendRedirect("../login.jsp");
+                response.sendRedirect("/user/login.jsp");
                 break;
         }
     }
@@ -83,7 +83,7 @@ public class UserCustomerController extends HttpServlet {
             response.sendRedirect("dashboard.jsp");
         } else {
             request.setAttribute("error", "Invalid email or password");
-            request.getRequestDispatcher("../login.jsp").forward(request, response);
+            request.getRequestDispatcher("/user/login.jsp").forward(request, response);
         }
     }
 
@@ -96,14 +96,14 @@ public class UserCustomerController extends HttpServlet {
 
         if (customerService.findByEmail(email) != null) {
             request.setAttribute("error", "Email already exists");
-            request.getRequestDispatcher("../register.jsp").forward(request, response);
+            request.getRequestDispatcher("/user/register.jsp").forward(request, response);
             return;
         }
 
         Customer customer = new Customer(0, name, email, password, phone, address);
         customerService.save(customer);
 
-        response.sendRedirect("../login.jsp");
+        response.sendRedirect("/user/login.jsp");
     }
 
     private void updateCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -111,7 +111,7 @@ public class UserCustomerController extends HttpServlet {
         Customer loggedInCustomer = (Customer) session.getAttribute("loggedInCustomer");
 
         if (loggedInCustomer == null) {
-            response.sendRedirect("../login.jsp");
+            response.sendRedirect("/user/login.jsp");
             return;
         }
 
@@ -125,7 +125,7 @@ public class UserCustomerController extends HttpServlet {
 
         customerService.update(loggedInCustomer);
 
-        response.sendRedirect("dashboard.jsp");
+        response.sendRedirect("/user/dashboard.jsp");
     }
 
     private void logoutCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -139,6 +139,6 @@ public class UserCustomerController extends HttpServlet {
         response.addCookie(emailCookie);
         response.addCookie(passwordCookie);
 
-        response.sendRedirect("../login.jsp");
+        response.sendRedirect("/user/login.jsp");
     }
 }

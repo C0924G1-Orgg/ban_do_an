@@ -31,7 +31,7 @@ public class AdminCustomerController extends HttpServlet {
         Boolean isAdmin = (Boolean) session.getAttribute("isAdmin");
 
         if (isAdmin == null || !isAdmin) {
-            response.sendRedirect("../login.jsp");
+            response.sendRedirect("/user/login.jsp");
             return;
         }
 
@@ -62,7 +62,7 @@ public class AdminCustomerController extends HttpServlet {
         Boolean isAdmin = (Boolean) session.getAttribute("isAdmin");
 
         if (isAdmin == null || !isAdmin) {
-            response.sendRedirect("../login.jsp");
+            response.sendRedirect("/user/login.jsp");
             return;
         }
 
